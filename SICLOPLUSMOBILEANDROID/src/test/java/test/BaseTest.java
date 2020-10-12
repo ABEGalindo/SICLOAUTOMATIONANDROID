@@ -28,8 +28,6 @@ public static RemoteWebDriver driver;
        capabilities.setCapability("platformVersion", "11.0");
        capabilities.setCapability("app", HProperties.readPath() + "\\Resources\\sicloPlus-staging-1.6.2-83.apk");
 
-       String algo = HProperties.strAppiumServer;
-       algo = algo;
        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         
     }
